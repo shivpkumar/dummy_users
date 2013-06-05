@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Who wants to party?</h1>
+  <h3>Sign up here!</h3>
+  <form action="/new_user" method="post">
+    <ul>
+      <li>first name: <input name="user[first_name]" type="text"></li>
+      <li>last name: <input name="user[last_name]" type="text"></li>
+      <li>email: <input name="user[email]" type="text"></li>
+      <li>password: <input name="user[password]" type="password"></li> 
+    </ul>
+    <input type="submit" value="PARTY">
+  </form>
+
+  <h3>Or, if you're already super cool, sign in!</h3>
+  <form action="/login_user" method="post">
+    <ul>
+      <li>email: <input name="user[email]" type="text"></li>
+      <li>password: <input name="user[password]" type="password"></li> 
+    </ul>
+    <input type="submit" value="DOUBLE PARTY">
+  </form>
+</div>
